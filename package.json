@@ -2,7 +2,7 @@
 	"name": "zally-openapi-linter",
 	"displayName": "Zally OpenAPI Linter",
 	"description": "Zally; A minimalistic, simple-to-use API linter",
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"publisher": "GoGoOtaku",
 	"repository": "https://github.com/GoGoOtaku/vscode-zally",
 	"license": "GPL-3.0-or-later",
@@ -38,11 +38,11 @@
 	"devDependencies": {
 		"@types/node": "^8.10.25",
 		"@types/vscode": "^1.37.0",
-		"request": "^2.88.0",
 		"tslint": "^5.16.0",
 		"typescript": "^3.5.1"
 	},
 	"dependencies": {
-		"@types/request": "^2.48.2"
+		"@types/request": "^2.48.2",
+		"request": "^2.88.0"
 	}
 }
