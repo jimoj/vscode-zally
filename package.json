@@ -7,7 +7,7 @@
 	"repository": "https://github.com/GoGoOtaku/vscode-zally",
 	"license": "GPL-3.0-or-later",
 	"engines": {
-		"vscode": "^1.34.0"
+		"vscode": "^1.37.0"
 	},
 	"categories": [
 		"Linters"
