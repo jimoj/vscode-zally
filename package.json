@@ -18,12 +18,16 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.zally-lint",
-				"title": "Lint File"
+		"configuration":{
+			"title": "Zally OpenAPI Linter",
+			"properties": {
+				"zally.serverUrl": {
+					"type": "string",
+					"default": "http://localhost:8000/",
+					"description": "URL to zally linting server."
+				}
 			}
-		]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
