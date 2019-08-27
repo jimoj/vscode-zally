@@ -2,7 +2,7 @@
 	"name": "zally-openapi-linter",
 	"displayName": "Zally OpenAPI Linter",
 	"description": "Zally; A minimalistic, simple-to-use API linter",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"publisher": "GoGoOtaku",
 	"repository": "https://github.com/GoGoOtaku/vscode-zally",
 	"license": "GPL-3.0-or-later",
