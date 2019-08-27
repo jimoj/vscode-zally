@@ -143,7 +143,7 @@ export default class ZallyOpenAPILintingProvider implements vscode.CodeActionPro
     private loadConfiguration(): void {
         let section = vscode.workspace.getConfiguration('zally');
         if (section) {
-            this.serverUrl = section.get<string>('zally.serverUrl', ZallyOpenAPILintingProvider.defaultUrl);
+            this.serverUrl = section.get<string>('serverUrl', ZallyOpenAPILintingProvider.defaultUrl);
         }
     }
 }
