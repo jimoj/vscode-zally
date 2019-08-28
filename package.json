@@ -2,7 +2,7 @@
 	"name": "zally-openapi-linter",
 	"displayName": "Zally OpenAPI Linter",
 	"description": "Zally; A minimalistic, simple-to-use API linter",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"publisher": "GoGoOtaku",
 	"repository": "https://github.com/GoGoOtaku/vscode-zally",
 	"license": "GPL-3.0-or-later",
@@ -18,7 +18,7 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"configuration":{
+		"configuration": {
 			"title": "Zally OpenAPI Linter",
 			"properties": {
 				"zally.serverUrl": {
@@ -30,16 +30,20 @@
 		}
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "tslint -p ./",
-		"watch": "tsc -watch -p ./"
+		"vscode:prepublish": "webpack --mode production",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"test-compile": "tsc -p ./",
+		"lint": "tslint -p ./"
 	},
 	"devDependencies": {
 		"@types/node": "^8.10.25",
 		"@types/vscode": "^1.37.0",
+		"ts-loader": "^6.0.4",
 		"tslint": "^5.16.0",
-		"typescript": "^3.5.1"
+		"typescript": "^3.5.1",
+		"webpack": "^4.39.3",
+		"webpack-cli": "^3.3.7"
 	},
 	"dependencies": {
 		"@types/request": "^2.48.2",
