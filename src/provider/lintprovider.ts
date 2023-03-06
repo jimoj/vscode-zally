@@ -99,7 +99,9 @@ export default class ZallyOpenAPILintingProvider implements vscode.CodeActionPro
         {
             json: {
                 api_definition_string: document.getText()
-            }
+            },
+	    rejectUnauthorized: false
+		
         },
         (error, res, body: ZallyResponseBody) => {
             if (error) {
